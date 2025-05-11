@@ -1,0 +1,30 @@
+{
+  "name": "mironova2056/custom-validation",
+  "description": "Module for working for validation ",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mary",
+      "email": "maria.mironova562006@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.4 | ^8.0",
+    "illuminate/database": "^13.0@dev",
+    "illuminate/events": "^13.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "CustomValidation\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CustomValidation\\ValidationServiceProvider"
+      ]
+    }
+  }
+}
